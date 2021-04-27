@@ -1,0 +1,24 @@
+#icon{
+  background-image: url("../img/icon.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 9vh;
+  width: 9vh;
+}
+
+#menu{
+  align-items: center;
+  border-bottom: solid 1px white;
+  height: 10vh;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0px;
+  width: 90vw;
+  z-index: 5;
+}
+
+#leftMenu, #rightMenu{
+  justify-content: space-evenly;
+  width: 40vw;
+}

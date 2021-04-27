@@ -1,0 +1,40 @@
+#arrow{
+  background-image: url("../svg/arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  bottom: 5vh;
+  height: 10vh;
+  position: absolute;
+  width: 10vh;
+}
+
+#download{
+  font-size: 3vh;
+  height: 20%;
+  margin-top: 5%;
+  width: 50%;
+}
+
+#game{
+  align-items: center;
+  background-image: url("../img/landing.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  justify-content: center;
+}
+
+#gameContent{
+  align-items: center;
+  height: 50vh;
+  width: 40vw;
+}
+
+#gameLogo{
+  background-image: url("../img/game-logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50%;
+  width: 100%;
+}

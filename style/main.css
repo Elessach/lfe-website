@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+@font-face {
+  font-family: gill;
+  src: url(../fonts/GillSans_Condensed.ttf);
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+}
+body, html{
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: gill, sans-serif;
+  margin: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h2{
+  font-weight: normal;
+  font-size: 4vh;
+  margin: 0px;
+}
+h3{
+  font-family: 'Amatic SC', serif;
+  font-size: 4vh;
+}
+h4{
+  font-family: 'Amatic SC', serif;
+  font-size: 7vh;
+  margin-bottom: 2vh;
+}
+
+p{
+  font-size: 3.5vh;
+  font-weight: normal;
+  width: 90%;
+}
+
+.button{
+  align-items: center;
+  border: 1px solid white;
+  font-family: 'Amatic SC', sans-serif;
+  height: 10vh;
+  justify-content: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.full-height{
+  height: 100vh;
+  width: 100vw;
+}
