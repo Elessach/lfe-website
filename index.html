@@ -5,27 +5,49 @@
   <head>
     <title>La Forêt Enchantée</title>
     <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style/animations.css">
     <link rel="stylesheet" href="style/game.css">
+    <link rel="stylesheet" href="style/hamburger.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/networks.css">
+    <link rel="stylesheet" href="style/partners.css">
     <link rel="stylesheet" href="style/project.css">
-    <meta name="description" concent="Website of Lea Sharon Harabagiu, engineer and artist. Site de Léa Sharon Harabagiu, ingénieure et artiste.">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/team.css">
+    <meta name="description" concent="site internet du jeu la foret enchantée du studio 307">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+
   </head>
   <body class="flex-column">
+      <script src="script/main.js"></script>
+    <button  id="menuButton" onclick="switchMenu()"class="hamburger hamburger--spin" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <div id="menuMobile" class="flex-column">
+      <div id="menuMobileContent" class="flex-column">
+        <a href="#game" onclick="closeMenu()"><h3>Le Jeu</h3></a>
+        <a href="#project" onclick="closeMenu()"><h3>Le Projet</h3></a>
+        <a href="#team" onclick="closeMenu()"><h3>L'équipe</h3></a>
+        <a href="#networks" onclick="closeMenu()"><h3>La Communauté</h3></a>
+        <a href="#partners" onclick="closeMenu()"><h3>Les Partenaires</h3></a>
+      </div>
+    </div>
     <div id="menu" class="flex-row">
       <div id="leftMenu" class="flex-row">
         <a href="#game"><h3>Le Jeu</h3></a>
         <a href="#project"><h3>Le Projet</h3></a>
-        <h3>L'équipe</h3>
+        <a href="#team"><h3>L'équipe</h3></a>
       </div>
       <div id="icon">
       </div>
       <div id="rightMenu" class="flex-row">
-        <h3>La Communauté</h3>
-        <h3>Les Partenaires</h3>
-        <h3><a>FR</a>/<a>ENG</a>
+        <a href="#networks"><h3>La Communauté</h3></a>
+        <a href="#partners"><h3>Les Partenaires</h3></a>
+        <h3 style="display:none"><a>FR</a>-<a>ENG</a>
         </h3>
       </div>
     </div>
@@ -35,7 +57,7 @@
         <h2>un jeu vidéo par le Studio 307</h2>
         <a id="download" class="button flex-column"><h3>Jouez Gratuitement</h3></a>
       </div>
-      <div id="arrow"></div>
+      <a id="arrow" href="#project"></a>
     </div>
     <div id="project" class="flex-row full-height">
       <div id="pentagramImg"></div>
@@ -45,11 +67,65 @@
           <br><br>
           Munissez-vous de votre lanterne et partez dans la Forêt Enchantée à la recherche des Gardiens protecteurs de votre village ! Mais attention, une Bête rôde dans les bois et peut vous attaquer à tout moment...</p>
           <a id="redirectToGame" class="button flex-column" href="#game"><h3>Jouer</h3></a>
-          <p>Ce projet a été réalisé dans le cadre de la Maîtrise en création Numérique à l’UQAT.</p>
+          <p>Ce projet a été réalisé dans le cadre de la Maîtrise en création numérique à l’UQAT.</p>
       </div>
     </div>
-    <div id="team">
+    <div id="team" class="flex-column full-height">
+      <div id="teamContent" class="flex-column">
+        <h4>L'équipe</h4>
+        <div id="teamMembers">
+          <a class="flex-column member" href="http://shillsportfolio.alwaysdata.net/" target="_blank">
+            <div id="memberImgSimon" class="memberImg"></div>
+            <h5>-Simon-</h5>
+            <p>product owner <br>& developer</p>
+          </a>
+          <a class="flex-column member" href="http://paul-chapelon.fr" target="_blank">
+            <div id="memberImgPaul" class="memberImg"></div>
+            <h5>-Paul-</h5>
+            <p>lead<br>developer</p>
+          </a>
+          <a class="flex-column member" href="http://adriendemuth.com" target="_blank">
+            <div id="memberImgAdrien" class="memberImg"></div>
+            <h5>-Adrien-</h5>
+            <p>UI/UX designer <br>& sound designer</p>
+          </a>
+          <a class="flex-column member" href="https://elessach.com" target="_blank">
+            <div id="memberImgLea" class="memberImg"></div>
+            <h5>-Léa-</h5>
+            <p>designer narrative <br>& responsable communication</p>
+          </a>
+          <div class="flex-column member">
+            <div id="memberImgTom" class="memberImg"></div>
+            <h5>-Tom-</h5>
+            <p>scrum master <br>& developer</p>
+          </div>
+          <div class="flex-column member">
+            <div id="memberImgDaniel" class="memberImg"></div>
+            <h5>-Daniel-</h5>
+            <p>directeur<br>artistique</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <div id="networks" class="flex-column">
+      <div id="networksContent" class="flex-column">
+        <div id="networksLogo" class="flex-row">
+          <a id="networkLogoFacebook" class="network-logo" href="https://www.facebook.com/gaming/LFEstudio307" target="_blank"><a class="network-link"></a>
+          <a id="networkLogoDiscord" class="network-logo" href="https://discord.gg/X4XZpgtwSD" target="_blank"><a class="network-link"></a>
+        </div>
+        <h4>Envie de rejoindre notre communauté ?</h4>
+        <p>Suivez notre activité sur Facebook et échangez avec nous sur Discord !</p>
+      </div>
+    </div>
+    <div id="partners" class="flex-column">
+      <h4>Nos partenaires</h4>
+      <div id="partnersLogo" class="flex-row">
+        <div id="partnerLogoUQAT" class="partner-logo"></div>
+        <div id="partnerLogoCNM" class="partner-logo"></div>
+      </div>
+    </div>
+    <footer class="flex-column">
+      <p>Studio 307 - Université de l'UQAT en Abitibi-Témiscamingue - 2021</p>
+    </footer>
   </body>
-  <script src="script/main.js"></script>
 </html>

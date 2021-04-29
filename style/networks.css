@@ -1,0 +1,34 @@
+#networks{
+  align-items: center;
+  background: url(../img/screenshot.png) no-repeat;
+  background-size: cover;
+  border-bottom: solid 1px white;
+  border-top: solid 1px white;
+  height: 50vh;
+  justify-content: center;
+  width: 100vw;
+}
+#networksContent{
+  height: 90%;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+.network-logo{
+  height: 10vh;
+  width: 10vh;
+}
+
+#networksLogo{
+  height: 20%;
+  justify-content: space-between;
+  width: 12%;
+}
+#networkLogoDiscord{
+  background: url(../img/discord.png) no-repeat;
+  background-size: contain;
+}
+#networkLogoFacebook{
+  background: url(../img/facebook.png) no-repeat;
+  background-size: contain;
+}

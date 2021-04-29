@@ -1,0 +1,57 @@
+@media screen and (max-width: 1250px){
+  #download{
+    width: 75%;
+  }
+  #project{
+    align-items: center;
+  }
+  #projectContent{
+    height: 90%;
+  }
+  #networksLogo{
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 920px){
+  h5{
+    font-size: 5vh;
+  }
+  #gameContent{
+    width: 75%;
+  }
+  .memberImg{
+    height: 50vw !important;
+    width: 50vw !important;
+  }
+  #menuButton{
+    display: flex;
+  }
+  #leftMenu, #rightMenu{
+    display: none;
+  }
+  #networksContent{
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  #networksLogo{
+      width: 50%;
+  }
+  .partner-logo{
+    height: 10vh;
+    width: 50%;
+  }
+  #partnersLogo{
+    align-items: center;
+    flex-direction: column;
+    height: inherit;
+    width: 90%;
+  }
+  #team{
+    height: auto;
+  }
+  #teamMembers{
+    grid-template-columns: 90% !important;
+  }
+}

@@ -1,4 +1,5 @@
 #arrow{
+  animation: floating 3s infinite;
   background-image: url("../svg/arrow.svg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -7,7 +8,6 @@
   position: absolute;
   width: 10vh;
 }
-
 #download{
   font-size: 3vh;
   height: 20%;

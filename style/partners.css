@@ -1,0 +1,27 @@
+.partner-logo{
+  height: 100%;
+  width: 20%;
+}
+#partnerLogoCNM{
+  background: url(../img/cnm.png) no-repeat;
+  background-size: contain;
+}
+#partnerLogoUQAT{
+  background: url(../img/uqat.png) no-repeat;
+  background-size: contain;
+}
+
+#partners{
+  align-items: center;
+  background: white;
+  color: black;
+  height: 50vh;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+#partnersLogo{
+  align-items: center;
+  height: 30%;
+  justify-content: space-evenly;
+  width: 60%;
+}

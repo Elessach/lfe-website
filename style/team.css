@@ -1,0 +1,64 @@
+.member{
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+  text-align: center;
+}
+.member:hover{
+  border: solid 1px #f6ae2d;
+  color:  #f6ae2d;
+  cursor: pointer;
+}
+.member:hover .memberImg{
+  border: solid 1px #f6ae2d;
+}
+
+.memberImg{
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  border: 1px white solid;
+  border-radius: 100%;
+  height: 10vw;
+  width: 10vw;
+}
+
+#memberImgLea{
+  background: url(../img/members/lea.PNG), url(../img/members/lea-bg.png);
+}
+#memberImgSimon{
+  background: url(../img/members/simon.PNG), url(../img/members/lea-bg.png);
+}
+#memberImgPaul{
+  background: url(../img/members/paul.PNG), url(../img/members/lea-bg.png);
+}
+#memberImgAdrien{
+  background: url(../img/members/adrien.PNG), url(../img/members/lea-bg.png);
+}
+#memberImgTom{
+  background: url(../img/members/tom.png), url(../img/members/lea-bg.png);
+}
+#memberImgDaniel{
+  background: url(../img/members/daniel.png), url(../img/members/lea-bg.png);
+}
+
+#team{
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 10vh;
+}
+#teamContent{
+  align-items: center;
+  border: 1px solid white;
+  justify-content: space-evenly;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  width: 90%;
+}
+#teamMembers{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  margin-top: 5vh;
+  row-gap: 5vh;
+  width: 90%;
+}
