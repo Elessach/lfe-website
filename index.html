@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style/partners.css">
     <link rel="stylesheet" href="style/project.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/riddle.css">
     <link rel="stylesheet" href="style/team.css">
     <meta name="description" concent="site internet du jeu la foret enchantée du studio 307">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,14 +43,44 @@
         <a href="#project"><h3>Le Projet</h3></a>
         <a href="#team"><h3>L'équipe</h3></a>
       </div>
-      <div id="icon">
-      </div>
+      <a id="icon" onclick="displayRiddle()">
+      </a>
       <div id="rightMenu" class="flex-row">
         <a href="#networks"><h3>La Communauté</h3></a>
         <a href="#partners"><h3>Les Partenaires</h3></a>
         <h3 style="display:none"><a>FR</a>-<a>ENG</a>
         </h3>
       </div>
+    </div>
+    <div id="riddle" class="flex-column">
+      <h4>Quel gardien êtes-vous ?</h4>
+      <div id="birthday" class="flex-column">
+        <h5>Quelle est votre date de naissance ?</h5>
+        <div id="birthdate" class="flex-row">
+          <input id="day" type="number" min="1" max="31" value="31"></input>
+          <input id="month" type="number"min="1" max="12" value="12"></input>
+        </div>
+        <a id="validateButton" onclick="calculateKey()">Valider</a>
+      </div>
+      <div id="key" class="flex-column">
+        <p>Votre numéro est le <span id="keyValue"></span>.</p>
+        <p>Notez-le, ce sera la base de tous vos calculs.</p>
+        <p><br>Parcourez les posts de la page Facebook pour retrouver les 4 énigmes qui vous donneront votre clef de Gardien.</p>
+        <div id="result" class="flex-column">
+          <h5>Ma clef de gardien est le numéro :</h5>
+          <input id="resultValue" type="number"></input>
+          <a id="validateResult" onclick="calculateResult()">Valider</a>
+        </div>
+        <p id="error"></p>
+      </div>
+      <div id="success" class="flex-column">
+        <h5 id="profileName"></h5>
+        <H5 id="profileDescription"></h5>
+        <div id="profileImg"></div>
+        <p>Bravo, vous avez réussi l'épreuve des Gardiens !</p>
+        <p>Prenez une capture d'écran pour preuve et envoyez-là en message privée sur le Facebook ou le Discord :)</p>
+      </div>
+      <a id="riddleCloseButton" onclick="closeRiddle()">Fermer</a>
     </div>
     <div id="game" class="flex-column full-height">
       <div id="gameContent" class="flex-column">

@@ -52,6 +52,15 @@ h5{
   margin: 0px;
 }
 
+input[type=number]{
+  background: black;
+  border: white 1px solid;
+  color: white;
+  font-family: 'Amatic SC', serif;
+  font-size: 3vh;
+  padding: 1vh;
+}
+
 p{
   font-size: 3.5vh;
   font-weight: normal;

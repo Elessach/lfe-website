@@ -1,0 +1,72 @@
+#birthday{
+  align-items: center;
+  border: 1px solid white;
+  height: 50%;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+#error{
+  text-align: center;
+}
+
+#key{
+  align-items: center;
+  display: none;
+  height: 50%;
+}
+
+#profileImg{
+  background-image: url(../img/symbols/Comet.PNG);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 25vh;
+  width: 25vh;
+}
+
+#result{
+  align-items: center;
+  border: solid 1px white;
+  height: 50%;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+#riddle{
+  align-items: center;
+  background: black;
+  border: 1px solid white;
+  bottom: 0px;
+  display: none;
+  height: 90%;
+  justify-content: space-evenly;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+#riddleCloseButton, #validateButton, #validateResult{
+  border: 1px solid white;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 3vh;
+  padding: 2vh;
+}
+#riddleCloseButton:hover , #validateButton:hover{
+    border: 1px solid #f6ae2d;
+}
+
+#success{
+  align-items: center;
+  display: none;
+  text-align: center;
+}
+
+#validateButton, #validateResult{
+  background: white;
+  color: black;
+}
+#validateButton:hover, #validateResult:hover{
+  background: #f6ae2d;
+}
