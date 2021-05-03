@@ -14,11 +14,27 @@
 }
 
 @media screen and (max-width: 920px){
+  #birthdate{
+    justify-content: center;
+    width: 90%;
+  }
+  #birthday{
+    text-align: center;
+    width: 90% !important;
+  }
   h5{
     font-size: 5vh;
   }
   #gameContent{
     width: 75%;
+  }
+  input[type=number]{
+      font-size: 5vh;
+  }
+  #key{
+    font-size: 3vh;
+    height: 60% !important;
+    text-align: center;
   }
   .memberImg{
     height: 50vw !important;
@@ -47,6 +63,9 @@
     flex-direction: column;
     height: inherit;
     width: 90%;
+  }
+  #result{
+    width: 90% !important;
   }
   #team{
     height: auto;
